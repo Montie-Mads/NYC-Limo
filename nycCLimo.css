@@ -1,0 +1,741 @@
+/* 
+Background color: #16161a
+Background-color break colors (grey): #242629 
+Font colors: #fffffe
+hover colors: ##4fc4cf
+*/
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #16161a;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+
+/* Header Area */
+
+.limo-header {
+
+    display: flex;
+    max-width: 100%;
+    margin: 16px 0px 0px 90px;
+
+}
+
+.limo-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+
+}
+
+.limo-logo a {
+    color: #fffffe;
+    text-decoration: none;
+}
+
+.limo-logo a:hover {
+    color: #4fc4cf;
+    transition: .15s ease-in-out;
+}
+
+.limo-header h1 {
+    font-weight: 300;
+}
+
+.limo-header-inner {
+    border: 3px solid #fffffe;
+    font-size: 16px;
+    margin: 5px;
+    padding: 0px 10px 0px 10px;
+
+}
+
+
+/* Nav */
+
+.nav-link {
+    color: #fffffe;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #4fc4cf;
+}
+
+.btn-outline-success {
+    border: solid 1px #fffffe;
+    color: #fffffe;
+
+}
+
+.btn-outline-success:hover {
+    color: #4fc4cf;
+}
+
+.navbar-toggler {
+    color: #fffffe;
+}
+
+
+.navbar a,
+.navbar a:visited {
+    color: #fffffe;
+    text-decoration: none;
+
+}
+
+.navbar a:hover {
+    color: #4fc4cf;
+}
+
+.d-flex {
+    margin-left: 90px;
+}
+
+.btn-outline-success:hover {
+    background-color: #4fc4cf;
+    color: #000;
+    border: #4fc4cf;
+}
+
+
+
+.zip-code {
+    text-align: center;
+    padding: 6px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: #16161a;
+    border: 1px solid rgba(255, 255, 255, 0.821);
+    color: #fffffe;
+    border: red solid 1px;
+}
+
+
+@media screen and (max-width:1300px) {
+    .limo-header {
+        display: flex;
+        flex-direction: row;
+        margin-left: 60px;
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .container-fluid {
+        display: flex;
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        background-color: #fffffe;
+
+    }
+
+    .navbar-toggler:hover {
+        color: #4fc4cf;
+    }
+
+}
+
+
+@media screen and (max-width: 799px) {
+    .limo-header {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
+        width: 85%;
+        margin: 10px 0px 0px 65px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .form-inner {
+        width: 140px;
+        margin-right: 20px;
+    }
+
+    .container-fluid {
+        display: flex;
+        margin-left: 80px;
+        padding-bottom: 10px;
+        width: 100%;
+
+    }
+
+}
+
+
+/* Carousel Start */
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    height: 450px;
+    max-height: 100vh;
+    padding-bottom: 90px;
+    margin-top: 50px;
+
+
+}
+
+.limo-carousel {
+    margin-top: 50px;
+    margin-left: 150px;
+
+    max-width: 80%;
+}
+
+
+.navigation-wrapper {
+    position: relative;
+}
+
+.dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #4fc4cf;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dot:focus {
+    outline: none;
+}
+
+.dot--active {
+    background: #000;
+}
+
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    cursor: pointer;
+    border: #4fc4cf solid 1px;
+    border-radius: 50%;
+    padding: 15px;
+
+}
+
+.arrow--left {
+    left: 5px;
+    background-image: url(imagesFolder/arrow-left-solid.svg);
+    background-repeat: no-repeat;
+    background-color: #4fc4cfb5;
+
+}
+
+.arrow--right {
+    left: auto;
+    right: 5px;
+    background-image: url(imagesFolder/arrow-right-solid.svg);
+    background-repeat: no-repeat;
+    background-color: #4fc4cfb5;
+
+}
+
+.arrow--disabled.arrow--left {
+    background-image: url(imagesFolder/arrow-left-solid.svg);
+
+}
+
+.arrow--disabled.arrow--right {
+    background-image: url(imagesFolder/arrow-right-solid.svg);
+
+}
+
+
+@media screen and (max-width: 1300px) {
+    .limo-carousel {
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .limo-carousel {
+        display: block;
+        width: 100%;
+        margin-left: 98px;
+        padding: -90px;
+    }
+
+    .carousel-limo-img-two {
+        position: absolute;
+        padding-bottom: 30px;
+    }
+
+    .carousel-limo-img-three {
+        position: absolute;
+        right: 0;
+    }
+}
+
+
+@media screen and (max-width: 799px) {
+    .limo-carousel {
+        display: none;
+    }
+}
+
+
+
+/* Limo Rate Cards */
+
+.limo-rates {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #fffffe;
+    text-align: center;
+    margin-top: 50px;
+    height: 290px;
+    background-color: #16161a;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+
+.limo-rates h3 {
+    font-size: 25px;
+    display: grid;
+
+}
+
+.limo-rates p {
+    font-size: 19px;
+    padding-top: 20px;
+}
+
+
+
+.click-rates-btn {
+    background-color: #4fc4cf;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.click-rates-btn a:hover {
+    color: #fffffe;
+}
+
+
+.click-rates-btn a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.click-rates-btn-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+}
+
+.limo-cards {
+    border: 1px solid #fffffe;
+    text-align: center;
+    background-color: #24262963;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: 50px;
+    transition: transform .9s;
+    padding-top: 10px;
+
+}
+
+.limo-cards:hover {
+    transform: scale(0.9);
+}
+
+
+@media screen and (max-width: 1300px) {
+    .limo-rates {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 10px;
+        width: 90%;
+    }
+
+    .limo-rates {
+        margin: 30px 10px 0px 30px;
+        overflow: hidden;
+        height: 100%;
+
+    }
+
+    .limo-cards {
+        padding: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .limo-rates {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        width: 90%;
+        overflow: hidden;
+        height: 100%;
+        gap: 10px;
+
+    }
+
+    .limo-cards {
+        padding: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 799px) {
+
+
+    .limo-rates {
+        grid-template-columns: 1fr;
+        display: grid;
+        gap: 10px;
+        width: 90%;
+    }
+
+    .limo-rates {
+        margin: 0px 10px 0px 30px;
+        overflow: hidden;
+        height: 100%;
+
+    }
+
+    .limo-cards {
+        padding: 20px;
+    }
+}
+
+
+
+/* Limo About Section */
+
+.limo-about {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #242629;
+}
+
+.limo-about-inner {
+    color: #fffffe;
+    display: flex;
+    justify-content: center;
+}
+
+.about-driver {
+    height: 80%;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.limo-about-driver-img {
+    margin-top: 30px;
+
+}
+
+
+
+.limo-about-us {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.limo-about-us p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .limo-about-inner {
+        flex-direction: column;
+    }
+
+    .limo-about-driver-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .about-driver {
+        width: 60%;
+    }
+
+    .limo-about-us {
+        display: flex;
+        justify-content: center;
+    }
+
+    .limo-about-us-inner {
+        font-size: 30px;
+        margin: 0px 0px 40px 10px;
+    }
+
+    .limo-about-us-inner p {
+        margin: 0px;
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (min-width:992) {
+    .limo-about {
+        margin-top: 100px;
+    }
+
+    .about-driver {
+        width: 100%;
+        display: flex;
+    }
+
+    .limo-about-us-inner p {
+        display: flex;
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 799px) {
+    .limo-about {
+        margin-top: 100px;
+        padding-top: 50px;
+    }
+
+    .about-driver {
+        width: 100%;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .limo-about-us-inner p {
+        display: flex;
+        font-size: 25px;
+    }
+
+}
+
+
+.limo-socials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.limo-socials p {
+    color: #fffffe;
+    font-size: 20px;
+    margin: 16px;
+}
+
+.socials-icons,
+.socials-icons-connect {
+    color: #fffffe;
+    font-size: 30px;
+    margin-top: 10px;
+    vertical-align: sub;
+    padding-right: 10px;
+
+}
+
+.socials-icons,
+.socials-icons-connect:visited {
+    color: #fffffe;
+    text-decoration: none;
+
+}
+
+.socials-icons-connect:hover,
+.connect-with-us-box a:hover {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    color: #4fc4cf;
+}
+
+
+
+.limo-socials-icon-box {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    margin: 0px 30px 0px 30px;
+
+}
+
+
+.connect-with-us-box {
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+
+}
+
+
+.connect-with-us-box a {
+    text-decoration: none;
+    color: #fffffe;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    .limo-socials {
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+
+    }
+
+    .limo-socials-icon-box {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .socials-icons-connect {
+        font-size: 45px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+
+    }
+
+    .socials-icons {
+        font-size: 35px;
+        margin-left: 10px;
+        margin-bottom: 35px;
+
+    }
+
+    .connect-with-us-box a {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .limo-socials {
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+    }
+
+    .limo-socials-icon-box {
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 17px;
+        width: 90%;
+
+        justify-content: center;
+    }
+
+    .socials-icons-connect {
+        padding-right: 0px;
+        margin-top: 10px;
+    }
+
+    .connect-with-us-box {
+        display: flex;
+        justify-content: center;
+
+        width: 90%;
+        margin-right: 60px;
+        padding-left: 50px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 799px) {
+
+    .limo-socials {
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+    }
+
+    .limo-socials-icon-box {
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 17px;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .limo-socials-icon-box p {
+        margin-top: 30px;
+    }
+
+    .socials-icons {
+        padding-right: 0px;
+    }
+
+    .connect-with-us-box {
+        display: flex;
+    }
+
+    .connect-with-us-box a {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+}
